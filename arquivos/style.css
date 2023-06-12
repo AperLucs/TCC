@@ -71,3 +71,7 @@ button{
     transform:scale(1.1);
     cursor:pointer;
 }
+
+.produto:active{
+    transform:scale(0.1);
+}
