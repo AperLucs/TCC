@@ -25,7 +25,7 @@ window.onmousedown = e => {
     track.dataset.mouseApertadoEm = e.clientX;
 }
 
-window.onmousemove = e => {
+produtos.onmousemove = e => {
 
     if(track.dataset.mouseApertadoEm === "0") return;
     
