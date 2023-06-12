@@ -1,0 +1,73 @@
+body {
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 100px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: red;
+    width: 100%;
+    height: 10%;
+}
+
+#textoCones{
+    font-size: 50;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(0%, -100%);
+}
+
+h1{
+    font-size: 50;
+    font-family: 'Lobster', cursive;
+    color: azure;
+}
+
+#produtos{
+    display:flex;
+    gap:50px;
+    position:absolute;
+    top:38%;
+    left:40%;
+    transform: translate(0%, -15%);
+}
+
+#produtos > .produto{
+    width:350px;
+    height:600px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: transform 0.5s;
+    
+}
+
+button{
+    background-color:transparent;
+    border-color: transparent;
+    cursor:pointer;
+}
+
+.produto:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
