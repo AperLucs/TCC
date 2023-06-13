@@ -1,0 +1,137 @@
+body {
+    background-color: bisque;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 100px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    width: 100%;
+    height: 10%;
+}
+
+#textoCones{
+    font-size: 50;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(0%, -100%);
+}
+
+h1, h2, h3{
+    font-size: 50;
+    font-family: 'Lobster', cursive;
+    color: azure;
+}
+
+#produtos{
+    display:flex;
+    gap:50px;
+    position:absolute;
+    top:38%;
+    left:40%;
+    transform: translate(0%, -15%);
+}
+
+#produtos > .produto{
+    width:350px;
+    height:600px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: transform 0.5s;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+}
+
+#userIcon{
+    position:absolute;
+    top:3px;
+    right:35px;
+}
+
+.produto:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+.produto:active{
+    transform:scale(0.9);
+}
+
+.menuList{
+    list-style: none;
+    display: flex;
+    padding:0;
+    margin:0;
+    justify-content: space-between;
+    position:fixed;
+    inset: 0 81% 55% 0;
+    background: purple;
+    flex-direction: column;
+    padding:30px;
+    padding-top: 100px;
+    row-gap:50px;
+    z-index: 1000;
+    transform: translateX(-101%);
+    transition: transform 0.2s ease-out;
+}
+
+.menuList[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+span{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    font-size: 25px;
+    color: azure;
+}
+
+.item{
+    border-bottom: solid 1px white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menuToggle{
+    position: absolute;
+    left:20px;
+    z-index: 9999;
+    height: 50px;
+    width:50px;
+    background-color: transparent;
+    background: url("/imagem/menu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menuToggle[aria-expanded="true"]{
+    background: url("/imagem/X.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
