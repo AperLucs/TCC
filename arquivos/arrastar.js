@@ -1,6 +1,5 @@
 const track = document.getElementById("produtos");
 const images = track.getElementsByClassName("produto");
-var porcentagem = -1;
 
 produtos.onmousedown = e => {
     track.dataset.mouseApertadoEm = e.clientX;
@@ -20,16 +19,15 @@ produtos.onmousemove = e => {
     
     if(isNaN(track.dataset.velhaPorcentagem)){
         track.dataset.velhaPorcentagem = porcentagem;
-        console.log("a");
         return;
     }
     
     proxPorcentagem = Math.min(proxPorcentagem, 0);
     proxPorcentagem = Math.max(proxPorcentagem, -91);
     
-
+    
     track.dataset.porcentagem = proxPorcentagem;
-
+    
     for(const img of track.getElementsByClassName("produto")){
         img.animate({
             objectPosition: `${100 + proxPorcentagem}% center`
@@ -43,7 +41,7 @@ produtos.onmousemove = e => {
 }
 
 window.onmouseup = e => {
-
+    
     track.dataset.mouseApertadoEm = "0";
     track.dataset.velhaPorcentagem = track.dataset.porcentagem;
 }
