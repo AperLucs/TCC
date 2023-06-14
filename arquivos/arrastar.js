@@ -41,7 +41,10 @@ produtos.onmousemove = e => {
 }
 
 window.onmouseup = e => {
-    
     track.dataset.mouseApertadoEm = "0";
     track.dataset.velhaPorcentagem = track.dataset.porcentagem;
+}
+
+function pegarSRC(img){
+    document.getElementById("aaa").src = img.source;
 }
