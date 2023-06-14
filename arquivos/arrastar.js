@@ -47,4 +47,4 @@ window.onmouseup = e => {
 
 function pegarSRC(img){
     document.getElementById("aaa").src = img.source;
-}
+};
