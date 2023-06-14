@@ -46,5 +46,14 @@ window.onmouseup = e => {
 }
 
 function pegarSRC(img){
-    document.getElementById("aaa").src = img.source;
+    const visible = productMenu.getAttribute("data-visible");
+    const productMenu = document.getElementsByClassName("productMenu");
+    
+    if(visible === "false"){
+        productMenu.setAttribute("data-visible", true);
+    } else {
+        productMenu.setAttribute("data-visible", false);
+    }
+    
+    document.getElementById("aaa").src = img.src;
 };

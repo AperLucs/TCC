@@ -38,3 +38,63 @@
 .produto:active{
     transform:scale(0.9);
 }
+
+.productMenu{
+    display:block;
+    background-color: purple;
+    aspect-ratio: 3/2;
+    width:50vw;
+    left:25vw;
+    top:25vh;
+    position:absolute;
+    z-index: 999;
+}
+
+.productMenu[data-visible="false"]{
+    display:none;
+}
+
+#aaa{
+    width:22vw;
+    height:65vh;
+    padding-top:2vh;
+}
+
+#productTitle{
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(27vw, -65vh);
+    position: absolute;
+    background-color: red;
+    max-width: 24vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#productDesc{
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(24vw, -60vh);
+    padding-top:5vh;
+    position: absolute;
+    background-color: red;
+    max-width: 24vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#buyButton{
+    background-color: green;
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: azure;
+    aspect-ratio: 3/1;
+    width:20vw;
+    position: absolute;
+    top:50vh;
+    left:24vw;
+}
