@@ -1,0 +1,90 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    width: 100vw;
+    height: 10vh;
+}
+
+#titulo{
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    font-family: 'Lobster', cursive;
+    color: azure;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+}
+
+#userIcon{
+    position:absolute;
+    top:0.4vh;
+    right:1vh;
+    height: 9vh;
+}
+
+.menuList{
+    list-style: none;
+    display: flex;
+    padding:0;
+    margin:0;
+    justify-content: space-between;
+    position:fixed;
+    inset: 0 81vw 55vh 0;
+    background: purple;
+    flex-direction: column;
+    padding:1vw;
+    padding-top: 10vh;
+    row-gap:5vh;
+    z-index: 1000;
+    transform: translateX(-101%);
+    transition: transform 0.2s ease-out;
+}
+
+@media(max-width:700px){
+    
+}
+
+.menuList[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+span{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    font-size: 2.5vh;
+    color: azure;
+}
+
+a{
+    text-decoration: none;
+}
+
+.item{
+    border-bottom: solid 1px white;
+}
+
+.menuToggle{
+    position: absolute;
+    left:20px;
+    z-index: 9999;
+    min-height: 6vh;
+    min-width: 6vw;
+    background-color: transparent;
+    background: url("/imagem/menu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menuToggle[aria-expanded="true"]{
+    background: url("/imagem/X.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

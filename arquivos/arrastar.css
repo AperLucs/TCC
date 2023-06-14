@@ -1,0 +1,32 @@
+#textoCones{
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(0, 4vh);
+}
+
+#produtos{
+    display:flex;
+    gap:3vw;
+    position:absolute;
+    top:38%;
+    left:40%;
+    transform: translate(0, -8vh);
+}
+
+#produtos > .produto{
+    min-width: 18vw;
+    height:61vh;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: transform 0.5s;
+}
+
+.produto:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+.produto:active{
+    transform:scale(0.9);
+}

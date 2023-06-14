@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAHA</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/arquivos/menu.css">
     <link rel="stylesheet" href="/arquivos/style.css">
     <script src="/arquivos/menu.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="
 font-family: 'Press Start 2P', cursive; 
@@ -17,10 +19,10 @@ line-height: 50px;
 overflow: auto;
 ">
 
-    <div class="menu" style="height: 97px;">
+    <div class="menu">
         <button class="menuToggle" aria-controls="MenuList" aria-expanded="false"></button>
-        <h1 style="transform: translateX(8px);">TRUFADASSO</h1>
-        <button style="border-radius: 100%;"><img src="/imagem/user.png" height="90px" width="90px" id="userIcon"></button>
+        <a href="index.html"><h1 id="titulo">TRUFADASSO</h1></a>
+        <button style="border-radius: 100%;"><img src="/imagem/user.png" id="userIcon"></button>
     </div>
 
     <ul class="menuList" data-visible="false" style="padding-top: 90px; row-gap:38px;">
@@ -45,6 +47,8 @@ overflow: auto;
             </a>
         </li>
     </ul>
+
+    <div class="page">
 
     <img style="float:right" src="/imagem/rickroll-rick.gif" width="650px">
 
@@ -102,6 +106,8 @@ Never gonna run around and desert you<br>
 Never gonna make you cry<br>
 Never gonna say goodbye<br>
 Never gonna tell a lie and hurt you<br></h1>
+
+</div>
 
 </body>
 </html>

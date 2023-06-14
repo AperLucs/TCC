@@ -35,7 +35,7 @@ produtos.onmousemove = e => {
     }
     
     track.animate({
-        transform: `translate(${proxPorcentagem}%, -15%)`
+        transform: `translate(${proxPorcentagem}%, -8vh)`
     }, {duration: 1200, fill:"forwards"});
     
 }
