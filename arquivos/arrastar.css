@@ -5,18 +5,28 @@
     transform: translate(0, 4vh);
 }
 
+@media (max-width:464px) {
+
+#textoCones{
+    position: absolute;
+    transform: translate(25vw, 0vh);
+}
+
+}
+
 #produtos{
     display:flex;
     gap:3vw;
     position:absolute;
-    top:38%;
-    left:40%;
+    top:38vh;
+    left:40vw;
     transform: translate(0, -8vh);
 }
 
 #produtos > .produto{
-    min-width: 18vw;
-    max-width: 18vw;
+    min-width: 350px;
+    width: 400px;
+    max-width: 650px;
     height:61vh;
     object-fit: cover;
     object-position: 100% 50%;
