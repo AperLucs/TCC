@@ -1,0 +1,108 @@
+#textoCones{
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 225, 0);
+    transform: translate(0, 4vh);
+}
+
+@media (max-width:464px) {
+#textoCones{
+    position: absolute;
+    transform: translate(25vw, 0vh);
+}}
+
+#produtos{
+    display:flex;
+    gap:3vw;
+    position:absolute;
+    top:38vh;
+    left:40vw;
+    transform: translate(0, -8vh);
+}
+
+#produtos > .produto{
+    min-width: 350px;
+    width: 400px;
+    max-width: 650px;
+    height:61vh;
+    object-fit: cover;
+    object-position: 100% 50%;
+    transition: transform 0.5s;
+    border-style: solid;
+    border-color: rgb(235, 243, 0);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
+}
+
+.produto:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+
+.produto:active{
+    transform:scale(0.9);
+}
+
+.productMenu{
+    display:block;
+    background-color: purple;
+    aspect-ratio: 3/2;
+    width:50vw;
+    left:25vw;
+    top:25vh;
+    position:absolute;
+    z-index: 999;
+}
+
+.productMenu[data-visible="false"]{
+    display:none;
+}
+
+#aaa{
+    width:22vw;
+    height:65vh;
+    padding-top:2vh;
+}
+
+#productTitle{
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(27vw, -65vh);
+    position: absolute;
+    background-color: red;
+    max-width: 24vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#productDesc{
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    transform: translate(24vw, -60vh);
+    padding-top:5vh;
+    position: absolute;
+    background-color: red;
+    max-width: 24vw;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+#buyButton{
+    background-color: green;
+    font-size: 5vh;
+    font-family: 'Lobster', cursive;
+    color: azure;
+    aspect-ratio: 3/1;
+    width:20vw;
+    position: absolute;
+    top:50vh;
+    left:24vw;
+}
+
