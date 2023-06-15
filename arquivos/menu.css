@@ -5,7 +5,10 @@
     justify-content: center;
     align-items: center;
 
-    background-color: red;
+    background: rgb(252,70,107);
+    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    border-bottom: solid;
+    border-color: black;
     width: 100vw;
     height: 10vh;
 }
@@ -13,7 +16,7 @@
 #titulo{
     font-size: clamp(2rem, 2.5vw, 3.5rem);
     font-family: 'Lobster', cursive;
-    color: azure;
+    color: rgb(0, 0, 0);
 }
 
 button{
@@ -37,7 +40,7 @@ button{
     justify-content: space-between;
     position:fixed;
     inset: 0 81vw 55vh 0;
-    background: purple;
+    background: rgb(0, 0, 0);
     flex-direction: column;
     padding:1vw;
     padding-top: 10vh;
@@ -55,7 +58,7 @@ span{
     font-family: 'Press Start 2P', cursive;
     font-weight: bolder;
     font-size: 2.5vh;
-    color: azure;
+    color: rgb(169, 241, 241);
 }
 
 a{
@@ -72,14 +75,14 @@ a{
     z-index: 9999;
     min-height: 6vh;
     aspect-ratio: 1 / 1;
-    background-color: blue;
-    background: url("/projeto 03/imagem/menu.png");
+    background-color: rgb(255, 230, 0);
+    background: url("/imagem/menu.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .menuToggle[aria-expanded="true"]{
-    background: url("/projeto 03/imagem/X.png");
+    background: url("/imagem/X.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
@@ -93,7 +96,7 @@ a{
     justify-content: space-between;
     position:fixed;
     inset: 0 0 50vh 80vw;
-    background: purple;
+    background: rgb(0, 0, 0);
     flex-direction: column;
     padding:1vw;
     padding-top: 10vh;
@@ -114,7 +117,17 @@ a{
     min-height: 9vh;
     aspect-ratio: 1 / 1;
     background-color: transparent;
-    background: url("/projeto 03/imagem/user.png");
+    background: url("/imagem/user.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+ .teste:hover{
+    text-shadow: rgb(204, 0, 255) -3px 0,
+                 rgb(136, 0, 255) 3px 0;
+ }
+
+ .titulo:hover{
+    text-shadow: red -3px 0,
+                 cyan 3px 0;
+ }
