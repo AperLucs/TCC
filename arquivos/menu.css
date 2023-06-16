@@ -123,6 +123,12 @@ a{
     background-size: contain;
 }
 
+.userToggle[data-visible="true"]{
+    background: url("/imagem/userOpen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
  .teste:hover{
     text-shadow: rgb(204, 0, 255) -3px 0,
                  rgb(136, 0, 255) 3px 0;
