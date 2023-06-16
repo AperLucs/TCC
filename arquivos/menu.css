@@ -77,13 +77,13 @@ a{
     min-height: 6vh;
     aspect-ratio: 1 / 1;
     background-color: rgb(255, 230, 0);
-    background: url("/projeto 03/imagem/menu.png");
+    background: url("/imagem/menu.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .menuToggle[aria-expanded="true"]{
-    background: url("/projeto 03/imagem/X.png");
+    background: url("/imagem/X.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
@@ -118,7 +118,7 @@ a{
     min-height: 9vh;
     aspect-ratio: 1 / 1;
     background-color: transparent;
-    background: url("/projeto 03/imagem/user.png");
+    background: url("/imagem/user.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
