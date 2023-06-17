@@ -50,7 +50,7 @@ button{
     row-gap:5vh;
     z-index: 1000;
     transform: translateY(-101%);
-    transition: transform 0.2s ease-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .menuList[data-visible="true"]{
@@ -106,7 +106,7 @@ a{
     row-gap:5vh;
     z-index: 1000;
     transform: translateY(-100%);
-    transition: transform 0.2s ease-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .userList[data-visible="true"]{
