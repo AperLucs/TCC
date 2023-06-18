@@ -138,8 +138,8 @@ a{
  }
 
  .titulo:hover{
-    text-shadow: purple -3px -3px,
-                 greenyellow 3px 3px;
+    text-shadow: red -3px -3px,
+                 cyan 3px 3px;
  }
 
  .footer {
