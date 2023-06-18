@@ -2,8 +2,12 @@ body {
     background: rgb(0, 0, 0);
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     user-select: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .container {
@@ -13,7 +17,7 @@ body {
     background: radial-gradient(circle, rgb(255, 255, 255) -1500%, rgb(0, 0, 0) 100%);
     display: flex;
     width: 100vw;
-    height:100vh;
+    height:90vh;
     
 
     flex-direction: column;
