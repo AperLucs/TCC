@@ -7,11 +7,13 @@ body {
 }
 
 .container {
-    background-image:radial-gradient(rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
     /* background: url("/imagem/ddm.png"); */
+    background-color: black;
+    background: radial-gradient(circle, rgb(255, 255, 255) -1500%, rgb(0, 0, 0) 100%);
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height:100vh;
     
 
     flex-direction: column;

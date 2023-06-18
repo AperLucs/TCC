@@ -22,7 +22,7 @@ produtos.onmousemove = e => {
     }
     
     proxPorcentagem = Math.min(proxPorcentagem, 0);
-    proxPorcentagem = Math.max(proxPorcentagem, -91);
+    proxPorcentagem = Math.max(proxPorcentagem, -92);
     
     track.dataset.porcentagem = proxPorcentagem;
 

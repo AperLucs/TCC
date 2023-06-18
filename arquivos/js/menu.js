@@ -2,6 +2,8 @@ const menuBar = document.querySelector(".menuList");
 const menuToggle = document.querySelector(".menuToggle");
 const userBar = document.querySelector(".userList");
 const userToggle = document.querySelector(".userToggle");
+const footerToggle = document.querySelector(".footerButton");
+const footer = document.querySelector(".footer");
 
 menuToggle.addEventListener('click', () => {
     const visibility = menuBar.getAttribute("data-visible");
@@ -41,4 +43,18 @@ document.addEventListener('click', (e) => {
         menuBar.setAttribute("data-visible", false);
         menuToggle.setAttribute("aria-expanded", false);
     }
+});
+
+footerToggle.addEventListener('click', () => {
+    const visibility = footer.getAttribute("data-visible");
+
+    if(visibility === "false"){
+        footer.setAttribute("data-visible", true);
+        footerToggle.setAttribute("aria-expanded", true);
+    } else if(visibility === "true"){
+        footer.setAttribute("data-visible", false);
+        footerToggle.setAttribute("aria-expanded", false);
+    }
+
+    console.log(footer.getAttribute("data-visible")+"/"+footerToggle.getAttribute("aria-expanded"));
 });

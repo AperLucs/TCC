@@ -1,0 +1,196 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    /* background: url("/imagem/ddm.png"); */
+
+    justify-content: center;
+    align-items: center;
+
+    /* background: rgb(252,70,107); */
+    background-color: black;
+    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    border-bottom: solid;
+    border-color: azure;
+    
+    width: 100vw;
+    height: 10vh;
+}
+
+#titulo{
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    font-family: 'Lobster', cursive;
+    color: azure;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+}
+
+#userIcon{
+    position:absolute;
+    top:0.4vh;
+    right:1vh;
+    height: 9vh;
+}
+
+
+.menuList[data-visible="true"]{
+    transform: translateX(0%);
+}
+
+span{
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    font-family: 'Lobster', cursive;
+    color: azure;
+}
+
+a{
+    text-decoration: none;
+}
+
+.item{
+    border-bottom: solid 1px white;
+}
+
+.menuToggle{
+    position: absolute;
+    left:1vw;
+    z-index: 9999;
+    min-height: 8vh;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(255, 230, 0);
+    background: url("/imagem/utilizando/menua.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menuToggle[aria-expanded="true"]{
+    background: url("/imagem/utilizando/Xa.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.menuList{
+    list-style: none;
+    display: flex;
+    padding:0;
+    margin:0;
+    justify-content: space-between;
+    position:absolute;
+    inset: 0 80vw 45vh 0;
+    background: rgb(0, 0, 0);
+    flex-direction: column;
+    padding:1vw;
+    padding-top: 10vh;
+    row-gap:5vh;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.userList{
+    list-style: none;
+    display: flex;
+    padding:0;
+    margin:0;
+    justify-content: space-between;
+    position:absolute;
+    inset: 0 0 45vh 80vw;
+    background: rgb(0, 0, 0);
+    flex-direction: column;
+    padding:1vw;
+    padding-top: 10vh;
+    row-gap:5vh;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.userList[data-visible="true"]{
+    transform: translateX(0);
+}
+
+.userToggle{
+    position: absolute;
+    right:1vw;
+    z-index: 9999;
+    min-height: 9vh;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    background: url("/imagem/utilizando/userA.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.userToggle[aria-expanded="true"]{
+    background: url("/imagem/utilizando/userOpenA.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+ .teste:hover{
+    text-shadow: rgb(204, 0, 255) -3px -3px,
+                 rgb(136, 0, 255) 3px 3px;
+ }
+
+ .titulo:hover{
+    text-shadow: purple -3px -3px,
+                 greenyellow 3px 3px;
+ }
+
+ .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0, 100%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .footer[data-visible="true"]{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translate(0);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footerButton{
+    background: url("/imagem/utilizando/setaCima.png");
+    height: 7vh;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:95vh;
+    z-index: 9999;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .footerButton[aria-expanded="true"]{
+    background: url("/imagem/utilizando/setaBaixo.png");
+    height: 7vh;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    transform: translate(0, -160%);
+    z-index: 9999;
+  }
