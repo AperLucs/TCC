@@ -58,3 +58,44 @@ footerToggle.addEventListener('click', () => {
 
     console.log(footer.getAttribute("data-visible")+"/"+footerToggle.getAttribute("aria-expanded"));
 });
+
+//login js
+function onEmailBlur (e) {
+    activeElement = null;
+    setTimeout (function ( ) {
+    if (activeElement == "email") {
+    } else {
+    if (e.target.value == "") {
+    e.target.parentElement.ClassList
+    .remove("focusWithText");
+    }}
+    //startBlinking();
+    resetFace ();
+    }
+    ), 100;
+    }
+    function onEmaillabelClick(e) {
+    activeElement = "email";
+    function onPasswordFocus (e) {
+    activeElement = "password";
+    if(leyesCovered) {
+    coverEyes();
+    }
+    }}
+
+
+
+    function stopBlinking0() {
+        blinking.kill();
+        blinking = null;
+        TweenMax. set([eyeL, eyeR],
+        {scaleY: eyeScale});
+    }
+
+        function getRandomInt (max) {
+        return Math. floor (Math. random ()
+       * Math. floor (max));
+        }
+
+
+    
