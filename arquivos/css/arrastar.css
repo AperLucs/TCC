@@ -1,94 +1,113 @@
 #textoCones{
-    font-size: 5vh;
+    font-size: 5dvh;
     font-family: 'Courgette', cursive;
     color: rgb(255, 225, 0);
-    transform: translate(0, 4vh);
-}
-
-#produtos{
-    display:flex;
-    gap:3vw;
-    position:absolute;
-    top:38vh;
-    left:3vw;
-    transform: translate(0, -8vh);
-}
-
-#produtos > .produto{
-    min-width: 15vw;
-    width: 20vw;
-    max-width: 35vw;
-    height:61vh;
-    object-fit: cover;
-    object-position: 100% 50%;
-    transition: transform 0.5s;
-    border-style: solid;
-    border-color: rgb(235, 243, 0);
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255);
-}
-
-.produto:hover{
-    transform:scale(1.1);
-    cursor:pointer;
-}
-
-.produto:active{
-    transform:scale(0.9);
-}
-
-.productMenu{
-    display:block;
-    background-color: purple;
-    aspect-ratio: 3/2;
-    width:50vw;
-    left:25vw;
-    top:25vh;
-    position:absolute;
-    z-index: 999;
-}
-
-.productMenu[data-visible="false"]{
-    display:none;
-}
-
-
-
-#productTitle{
-    font-size: 5vh;
-    font-family: 'Lobster', cursive;
-    color: brown;
-    transform: translate(27vw, -65vh);
     position: absolute;
-    background-color: red;
-    max-width: 24vw;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
+    top:15dvh;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
-#productDesc{
-    font-size: 5vh;
-    font-family: 'Lobster', cursive;
-    color: brown;
-    transform: translate(24vw, -60vh);
-    padding-top:5vh;
-    position: absolute;
-    background-color: red;
-    max-width: 24vw;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
 }
 
-#buyButton{
-    background-color: green;
-    font-size: 5vh;
-    font-family: 'Lobster', cursive;
-    color: azure;
-    aspect-ratio: 3/1;
-    width:20vw;
-    position: absolute;
-    top:50vh;
-    left:24vw;
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  font-size: 60;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -30px;
+}
+.wrapper i:last-child{
+  right: -15px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 500px;
+  list-style: none;
+  background: linear-gradient(to left top, #ff02e6, #7e3dff);
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 30px 0 5px;
+  text-align: center;
+}
+.carousel .card span {
+  color: #005909;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }

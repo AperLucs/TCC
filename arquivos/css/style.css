@@ -1,7 +1,11 @@
-body {
-    background: rgb(0, 0, 0);
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
     overflow-x: hidden;
     user-select: none;
 }
@@ -13,23 +17,17 @@ body::-webkit-scrollbar{
 .container {
     /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
     /* background: url("/imagem/ddm.png"); */
-    background-color: black;
-    background: radial-gradient(circle, rgb(255, 255, 255) -1500%, rgb(0, 0, 0) 100%);
     display: flex;
-    width: 100vw;
-    height:90vh;
-    
-
-    flex-direction: column;
-    justify-content: start;
+    padding: 0 35px;
     align-items: center;
-
-    animation:carregar 1s;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #c50000, rgb(0, 17, 255));
 }
 
 .page{
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 90dvh;
 
     animation:carregar 1s;
 }

@@ -9,16 +9,16 @@
 
     /* background: rgb(252,70,107); */
     background-color: black;
-    background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%);
+    background: radial-gradient(circle, #c50000, rgb(0, 17, 255));
     border-bottom: solid;
     border-color: azure;
     
-    width: 100vw;
-    height: 10vh;
+    min-width: 100dvw;
+    min-height: 10dvh;
 }
 
 #titulo{
-    font-size: clamp(2rem, 3vw, 3.5rem);
+    font-size: clamp(1.5rem, 4dvw, 4.5rem);
     font-family: 'Courgette', cursive;
     color: azure;
 }
@@ -31,9 +31,9 @@ button{
 
 #userIcon{
     position:absolute;
-    top:0.4vh;
-    right:1vh;
-    height: 9vh;
+    top:0.4dvh;
+    right:1dvh;
+    height: 9dvh;
 }
 
 
@@ -42,7 +42,7 @@ button{
 }
 
 span{
-    font-size: clamp(2rem, 2.5vw, 3.5rem);
+    font-size: clamp(2rem, 2.5dvw, 3.5rem);
     font-family: 'Courgette', cursive;
     color: rgb(188, 254, 254);
 }
@@ -59,16 +59,15 @@ a{
     position: absolute;
     left:1vw;
     z-index: 9999;
-    min-height: 8vh;
+    height: 6dvh;
     aspect-ratio: 1 / 1;
-    background-color: rgb(255, 230, 0);
-    background: url("/imagem/utilizando/menua.png");
+    background: url("/imagem/Nutilizando/menu.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .menuToggle[aria-expanded="true"]{
-    background: url("/imagem/utilizando/Xa.png");
+    background: url("/imagem/Nutilizando/X.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
@@ -82,16 +81,34 @@ a{
     justify-content: space-between;
     position:absolute;
     top:0;
-    width:20vw;
-    height:40vh;
+    width:20dvw;
+    height:40dvh;
     background: rgb(0, 0, 0);
     flex-direction: column;
-    padding:1vw;
-    padding-top: 10vh;
-    row-gap:5vh;
+    padding:1dvw;
+    padding-top: 10dvh;
+    row-gap:5dvh;
     z-index: 1000;
     transform: translateY(-100%);
     transition: transform 0.7s ease-in-out;
+}
+
+.userToggle{
+    position: absolute;
+    right:1dvw;
+    z-index: 9999;
+    min-height: 9dvh;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    background: url("/imagem/Nutilizando/user.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.userToggle[aria-expanded="true"]{
+    background: url("/imagem/Nutilizando/userOpen.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .userList{
@@ -103,13 +120,13 @@ a{
     position:absolute;
     top:0;
     right:0;
-    width:20vw;
-    height:40vh;
+    width:20dvw;
+    height:40dvh;
     background: rgb(0, 0, 0);
     flex-direction: column;
-    padding:1vw;
-    padding-top: 10vh;
-    row-gap:5vh;
+    padding:1dvw;
+    padding-top: 10dvh;
+    row-gap:5dvh;
     z-index: 1000;
     transform: translateY(-100%);
     transition: transform 0.7s ease-in-out;
@@ -119,23 +136,6 @@ a{
     transform: translateX(0);
 }
 
-.userToggle{
-    position: absolute;
-    right:1vw;
-    z-index: 9999;
-    min-height: 9vh;
-    aspect-ratio: 1 / 1;
-    background-color: transparent;
-    background: url("/imagem/utilizando/userA.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.userToggle[aria-expanded="true"]{
-    background: url("/imagem/utilizando/userOpenA.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
  .teste:hover{
     text-shadow: rgb(204, 0, 255) -3px -3px,
