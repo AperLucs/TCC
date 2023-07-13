@@ -138,8 +138,8 @@ a{
 
 
  .teste:hover{
-    text-shadow: rgb(204, 0, 255) -3px -3px,
-                 rgb(136, 0, 255) 3px 3px;
+    text-shadow: red -3px -3px,
+                 cyan 3px 3px;
  }
 
  .titulo:hover{
@@ -147,17 +147,5 @@ a{
                  cyan 3px 3px;
  }
 
- .footer {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    color: rgb(244, 0, 0);
-    padding: 10px;
-    text-align: center;
-}
 
-  .footer a {
-    color: white;
-    text-decoration: none;
-  }
+

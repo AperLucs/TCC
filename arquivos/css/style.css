@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to right top, #c50000, rgb(0, 17, 255));
+    background: linear-gradient(to bottom, #add8e6, #ffc0cb);
 }
 
 .page{

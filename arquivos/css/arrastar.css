@@ -1,7 +1,7 @@
 #textoCones{
     font-size: 5dvh;
     font-family: 'Courgette', cursive;
-    color: rgb(255, 225, 0);
+    color: rgb(0, 0, 0);
     position: absolute;
     top:15dvh;
     left:50%;
@@ -75,7 +75,7 @@
   scroll-snap-align: start;
   height: 500px;
   list-style: none;
-  background: linear-gradient(to left top, #ff02e6, #7e3dff);
+  background: color(rgba(0, 0, 0, 0));
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
@@ -94,9 +94,10 @@
   font-size: 2rem;
   margin: 30px 0 5px;
   text-align: center;
+  font-family: 'Courgette', cursive;
 }
 .carousel .card span {
-  color: #005909;
+  color: #000000;
   font-size: 2.5rem;
 }
 
