@@ -75,7 +75,9 @@
   scroll-snap-align: start;
   height: 500px;
   list-style: none;
-  background: color(rgba(0, 0, 0, 0));
+  border: 4px solid rgb(230, 231, 231);
+  /* background: linear-gradient(to left top, #ff02e6, #7e3dff); */
+  /* background-image: url(/imagem/zoeira/ddm.png); */
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;

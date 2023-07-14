@@ -25,11 +25,20 @@ body::-webkit-scrollbar{
     background: linear-gradient(to bottom, #add8e6, #ffc0cb);
 }
 
-.page{
-    width: 100dvw;
-    height: 90dvh;
 
-    animation:carregar 1s;
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgb(244, 0, 0);
+    padding: 10px;
+    text-align: center;
+    background-color: linear-gradient(to right, );
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 @keyframes carregar {

@@ -71,7 +71,7 @@ const infiniteScroll = () => {
 const autoPlay = () => {
     if(window.innerWidth < 800 || !isAutoPlay) return; // Não deve fazer autoplay em dispositivo mobile
     // Autoplay depois de 2500ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 4000);
 }
 autoPlay();
 
