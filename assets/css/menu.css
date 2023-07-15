@@ -61,13 +61,13 @@ a{
     z-index: 9999;
     height: 6dvh;
     aspect-ratio: 1 / 1;
-    background: url("/imagem/Nutilizando/menu.png");
+    background: url("assets/img/Nutilizando/menu.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .menuToggle[aria-expanded="true"]{
-    background: url("/imagem/Nutilizando/X.png");
+    background: url("assets/img/Nutilizando/X.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
@@ -100,13 +100,13 @@ a{
     min-height: 9dvh;
     aspect-ratio: 1 / 1;
     background-color: transparent;
-    background: url("/imagem/Nutilizando/user.png");
+    background: url("assets/img/Nutilizando/user.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .userToggle[aria-expanded="true"]{
-    background: url("/imagem/Nutilizando/userOpen.png");
+    background: url("assets/img/Nutilizando/userOpen.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
